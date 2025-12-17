@@ -1,0 +1,4 @@
+FROM python:3.10
+COPY serving/ /app
+RUN pip install torch pytorch-forecasting google-cloud-aiplatform
+CMD ["python", "predictor.py"]

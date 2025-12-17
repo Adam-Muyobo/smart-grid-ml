@@ -1,0 +1,37 @@
+time_features:
+  - name: hour_of_day
+    dtype: int
+    version: v1
+  - name: day_of_week
+    dtype: int
+    version: v1
+  - name: is_holiday
+    dtype: bool
+    version: v1
+
+weather_features:
+  - name: temperature
+    dtype: float
+    version: v1
+  - name: wind_speed
+    dtype: float
+    version: v1
+  - name: solar_irradiance
+    dtype: float
+    version: v1
+
+rolling_features:
+  - name: demand_mean_24h
+    dtype: float
+    version: v1
+  - name: demand_std_168h
+    dtype: float
+    version: v1
+
+static_features:
+  - name: site_capacity_kw
+    dtype: float
+    version: v1
+  - name: asset_type
+    dtype: string
+    version: v1
